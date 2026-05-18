@@ -33,41 +33,44 @@
   </head>
   <body>
     <!-- nav bar  -->
-    <nav class="navbar navbar-expand-md navbar-light custom-navbar">
-      <div class="container">
-        <a class="navbar-brand text-uppercase" href="#hero">Foodeat</a>
+<nav class="navbar navbar-expand-md custom-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand text-uppercase fw-bold" href="index.html">Foodeat</a>
 
-        <button
-          class="navbar-toggler border-0 shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="d-flex align-items-center order-md-last gap-2">
+      <button class="btn theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+        <i class="bi bi-moon-fill"></i>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-          </ul>
-        </div>
+      <button
+        class="navbar-toggler border-0 shadow-none p-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-        <button class="btn btn-sm ms-3 theme-toggle" id="themeToggle">
-          <i class="bi bi-moon-fill"></i>
-        </button>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-md-center">
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 py-md-0" href="index.html#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 py-md-0" href="index.html#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 py-md-0 me-md-2" href="index.html#about">About</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
 
 <!-- hero section -->
 
