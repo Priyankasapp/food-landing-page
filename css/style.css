@@ -70,5 +70,157 @@ a{
   }
 }
 
+/* hero section  */
 
+.hero-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #3d2514;
 
+}
+.hero-text{
+    font-family: 'Poppins', sans-serif;
+   font-size: 1.1rem;
+    color: #5c554e;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+/* --- Button Styling --- */
+.btn-food {
+  background-color: #cf7143; /* Warm orange/terracotta */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border-radius: 30px; /* Pill-shaped buttons */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-food:hover {
+  background-color: #b55f35;
+  color: #ffffff;
+}
+
+.btn-book {
+  background-color: #d1c7bd; /* Soft greyish-beige button background */
+  color: #3d2514;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #c4b9ae;
+  color: #3d2514;
+}
+.hero-img{
+    max-height: 550px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.15));
+}
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+}
+
+/* Section Title */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #3d2514;
+  font-weight: 700;
+}
+
+/* Base Card Styling */
+.menu-card {
+  background-color:transparent; /* Clean, warm off-white card background */
+  border-radius: 24px;       /* Smooth extra-rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); /* Extremely soft shadow */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 10px 30px -5px, #222 0px 10px 20px -10px; /* Subtle layered shadows for depth */
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(207, 113, 67, 0.08); /* Glows slightly with the theme color */
+}
+
+/* Image Container */
+.card-img-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-img-container img {
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 50%; /* Keeps food bowls perfectly circular if needed */
+}
+
+/* Text Content Inside Card */
+.card-body-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-food-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2b2b2b;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.card-rating {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #cf7143; /* The standout orange accent color */
+}
+
+.card-food-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #7a736d;
+  margin-bottom: auto; /* Pushes the price and stars to the absolute bottom */
+  min-height: 45px;    /* Ensures cards stay even even if text length varies */
+}
+
+/* Stars & Price */
+.stars-container i {
+  color: #df914b; /* Subtle orange-yellow for the stars */
+  font-size: 0.9rem;
+  margin-right: 2px;
+}
+
+.card-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+/* Responsive fixes for smaller screens */
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
