@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+   background: linear-gradient(
+        135deg,
+        #f7e7d6 0%,
+        #f3d8bc 50%,
+        #f0cfac 100%
+    );
+    color: #222;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------------------ nav --------------------- */
+/* Custom Navbar Styling */
+.custom-navbar {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background: transparent; /* Lets your gradient background show through */
+}
+
+/* Brand/Logo Styling */
+.custom-navbar .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #cf7143 !important; /* The warm terracotta/orange color from the image */
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Links Styling */
+.custom-navbar .navbar-nav .nav-link {
+  font-family: 'Poppins', sans-serif; /* Clean sans-serif font for the menu */
+  font-weight: 400;
+  color: #2b2b2b !important; /* Dark charcoal color for high readability */
+  font-size: 1.05rem;
+  padding-left: 1.5rem !important;  /* Creates the generous spacing between items */
+  padding-right: 1.5rem !important;
+  transition: color 0.2s ease;
+}
+
+/* Subtle hover effect for links */
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #cf7143 !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767.98px) {
+  .custom-navbar .navbar-nav {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background when collapsed */
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  .custom-navbar .navbar-nav .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+}
+
+
+

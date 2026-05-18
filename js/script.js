@@ -1,0 +1,1 @@
+console.log("Food Landing Page Ready");
