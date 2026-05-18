@@ -224,3 +224,57 @@ a{
     font-size: 2rem;
   }
 }
+
+/* Fries Section Typography */
+.fries-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #3d2514;
+  line-height: 1.1;
+}
+
+.fries-text {
+  font-family: 'Poppins', sans-serif;
+  color: #5c554e;
+  font-size: 1.1rem;
+  max-width: 440px; /* Keeps line length elegant like the mock-up */
+  line-height: 1.6;
+}
+
+/* Fries Image Sizing */
+.fries-img {
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Features Footer Bar Styling */
+.features-bar {
+  border-top: 1px solid rgba(61, 37, 20, 0.15); /* Light, subtle divider line */
+}
+
+.feature-item {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #2b2b2b;
+  font-weight: 400;
+}
+
+.feature-item i {
+  font-size: 1.3rem;
+  color: #2b2b2b;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 991.98px) {
+  .fries-title {
+    font-size: 2.5rem;
+  }
+  .features-bar {
+    justify-content: grid;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr); /* Splits into a clean 2x2 grid on mobile */
+    gap: 1.5rem !important;
+  }
+}
