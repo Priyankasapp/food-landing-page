@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light custom-navbar">
@@ -51,7 +53,7 @@
       </div>
     </nav>
 
-    <div class="text-center pt-5 pb-3">
+    <div class="text-center pt-5 pb-3" data-aos="fade-down">
       <h1 class="hero-title">Reserve Your Table</h1>
       <p class="hero-text mx-auto mt-2">Please fill out the form below to secure your dining spot.</p>
     </div>
@@ -60,7 +62,7 @@
       <div class="container">
         <div class="row align-items-start g-5">
           
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right">
             <img
               src="images/fries.png"
               alt="Restaurant Table"
@@ -74,21 +76,21 @@
             </p>
 
             <div class="expect-list mt-4">
-              <div class="d-flex align-items-center gap-3 mb-3 feature-check">
+              <div class="d-flex align-items-center gap-3 mb-3 feature-check" data-aos="fade-up">
                 <i class="bi bi-check-circle-fill"></i>
                 <span>Freshly cooked delicious meals</span>
               </div>
-              <div class="d-flex align-items-center gap-3 mb-3 feature-check">
+              <div class="d-flex align-items-center gap-3 mb-3 feature-check" data-aos="fade-up" data-aos-delay="100">
                 <i class="bi bi-check-circle-fill"></i>
                 <span>Comfortable and elegant atmosphere</span>
               </div>
-              <div class="d-flex align-items-center gap-3 mb-3 feature-check">
+              <div class="d-flex align-items-center gap-3 mb-3 feature-check" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-check-circle-fill"></i>
                 <span>Fast and friendly service</span>
               </div>
             </div>
 
-            <div class="policy-card mt-5">
+            <div class="policy-card mt-5" data-aos="zoom-in">
               <h4 class="mb-3 d-flex align-items-center">
                 <i class="bi bi-info-circle-fill me-2"></i>
                 Cancellation Policy
@@ -98,7 +100,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left">
   <div class="reservation-form-card">
     <form>
       <div class="mb-3">
@@ -153,6 +155,15 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
