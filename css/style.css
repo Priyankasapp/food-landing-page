@@ -6,14 +6,16 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-   background: linear-gradient(
-        135deg,
-        #f7e7d6 0%,
-        #f3d8bc 50%,
-        #f0cfac 100%
-    );
+  background: linear-gradient(135deg, #f7e7d6, #f3d8bc);
     color: #222;
+    transition: 0.3s ease;
 }
+/* DARK MODE */
+body.dark-mode{
+    background: #121212;
+    color: #ffffff;
+}
+
 
 h1,h2,h3,h4,h5{
     font-family: 'Playfair Display', serif;
@@ -29,8 +31,29 @@ a{
   padding-top: 2rem;
   padding-bottom: 1rem;
   background: transparent; 
+  transition: 0.3s;
+}
+body.dark-mode .custom-navbar{
+    background: #1e1e1e !important;
+}
+/* Cards */
+body.dark-mode .menu-card{
+    background: #1f1f1f;
+    color: white;
+}
+/* Hero text fix */
+body.dark-mode .hero-text{
+    color: #ccc;
 }
 
+/* Buttons tweak */
+body.dark-mode .btn-book{
+    border: 1px solid #fff;
+    color: #fff;
+}
+body.dark-mode .theme-toggle{
+  color: #fff;
+}
 /* Brand/Logo Styling */
 .custom-navbar .navbar-brand {
   font-family: 'Playfair Display', serif;
@@ -277,4 +300,58 @@ a{
     grid-template-columns: repeat(2, 1fr); /* Splits into a clean 2x2 grid on mobile */
     gap: 1.5rem !important;
   }
+}
+
+/* Improved dark-mode text/color overrides for readability */
+body.dark-mode{
+  --bg-color: #0f1112;
+  --surface: #171717;
+  --text-primary: #e6e6e6;
+  --text-muted: #bdbdbd;
+  --accent: #cf7143;
+  background: linear-gradient(135deg, var(--bg-color), #151515);
+  color: var(--text-primary);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5{
+  color: var(--text-primary);
+}
+
+body.dark-mode .custom-navbar .navbar-brand{
+  color: var(--accent) !important;
+}
+
+body.dark-mode .custom-navbar .navbar-nav .nav-link{
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .menu-card{
+  background: var(--surface) !important;
+  color: var(--text-primary);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .card-food-title,
+body.dark-mode .card-price,
+body.dark-mode .card-rating{
+  color: var(--text-primary);
+}
+
+body.dark-mode .card-food-desc,
+body.dark-mode .hero-text,
+body.dark-mode .feature-item,
+body.dark-mode .section-title{
+  color: var(--text-muted);
+}
+
+body.dark-mode .stars-container i{
+  color: #f6c07a;
+}
+
+body.dark-mode .btn-food{
+  background-color: #b55f35;
 }
