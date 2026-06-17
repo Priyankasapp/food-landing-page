@@ -1,5 +1,5 @@
 site: Foodeat
-url: https://sage-starlight-e2609b.netlify.app/
+url: https://priyankasapp.github.io/food-landing-page/
 
 description:
 A modern food landing page where users can explore dishes and book a table online.

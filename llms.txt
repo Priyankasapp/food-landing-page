@@ -4,10 +4,10 @@
 ## Main pages
 
 - Home
-    https://sage-starlight-e2609b.netlify.app/
+  https://priyankasapp.github.io/food-landing-page/
 
 - Table Booking 
-    https://sage-starlight-e2609b.netlify.app/register.html
+    https://priyankasapp.github.io/food-landing-page/register.html
 
 ## Features
     
@@ -16,4 +16,3 @@
     - Catering service
     - Memership
     - Delivery services
-      
