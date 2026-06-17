@@ -1,0 +1,19 @@
+> A modern food landing page where users can explore delicious dishes and book 
+
+
+## Main pages
+
+- Home
+    https://sage-starlight-e2609b.netlify.app/
+
+- Table Booking 
+    https://sage-starlight-e2609b.netlify.app/register.html
+
+## Features
+    
+    - Food menu
+    - Online table booking 
+    - Catering service
+    - Memership
+    - Delivery services
+      
