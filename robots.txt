@@ -1,0 +1,4 @@
+User-agents:*
+Allows:/
+
+Sitemap: https://sage-starlight-e2609b.netlify.app/sitemap.xml
